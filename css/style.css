@@ -1,0 +1,189 @@
+.contenedor{
+	max-width: 1000px;
+	margin: auto;
+	border: cyan solid 1px;
+}
+
+
+nav{
+	background: yellow;
+	padding: 20px 0;
+}
+
+nav ul{
+	float: right;
+}
+
+nav h1{
+	display: inline-block;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav ul li:last-child{
+	margin-right: 0;
+}
+
+nav ul li a{
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+header{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2fef36+0,168be5+100 */
+	background: rgb(47,239,54); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(47,239,54,1) 0%, rgba(22,139,229,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(47,239,54,1) 0%,rgba(22,139,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(47,239,54,1) 0%,rgba(22,139,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fef36', endColorstr='#168be5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding: 80px 0;
+	min-height: 250px;
+}
+
+
+
+.boton{
+	display: inline-block;
+	background: red;
+	color: white;
+	text-decoration: none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	transition: 1s;
+}
+
+.boton:hover{
+	background: blue;
+}
+
+/* 
+	TAREA: ver documentación de transition;
+*/
+
+
+header h2{
+	font-size: 70px;
+}
+
+header h4{
+	font-size: 30px;
+}
+
+
+@media screen and (max-width: 900px){
+	nav h1{
+		display: block;
+		text-align: center;
+	}
+
+	nav ul{
+		float: none;
+		text-align: center;
+	}
+}
+
+.info article{
+	display: inline-block;
+	width: 49%;
+}
+
+
+.info article h3{
+	font-size: 30px;
+}
+
+.solo-mobile{
+	display: none;
+}
+
+@media screen and (max-width: 768px){
+	.ocultar-mobile{
+		display: none;
+	}
+
+	.solo-mobile{
+		display: inline-block;
+	}
+
+	.info article{
+		width: 100%;
+		display: block;
+	}
+}
+
+
+@keyframes cambiocolor{
+	from{
+		background: blue;
+	}
+
+	to{
+		background: green;
+	}
+}
+
+@keyframes cambiomascolor{
+	0%{background: blue;}
+	20%{background: green; left: 100px; width: 300px;}
+	40%{background: yellow; left: 0px; height: 300px;}
+	60%{background: red; left: 100px;}
+	80%{background: violet; left: 0px;}
+	100%{background: blue;}
+}
+
+
+.cuadrado{
+	}	
+
+
+.cuadrado2{
+	width: 100px;
+	height: 100px;
+	background: red;
+	display: inline-block;
+	transition:2s;
+}
+
+.cuadrado2:hover{
+	transform:rotate(45deg) scale(2) translate(-20px,-100px);
+}
+
+.iconos{
+    font-size: 60px;
+    color: white;
+    background: blue;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+ }
+
+@keyframes rotacion {
+    from {transform:rotate(0deg);}
+   to {transform:rotate(100deg);}
+}
+
+
+.tuerca{
+    font-size: 60px;
+    background:black;    
+    width: 75px;
+    height: 75px;
+    animation-name:rotacion;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    position: relative;
+
+}
+
+
+
+
